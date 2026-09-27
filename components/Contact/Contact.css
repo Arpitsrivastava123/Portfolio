@@ -1,0 +1,289 @@
+#contact {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #1e1e1e;
+  color: white;
+
+  box-sizing: border-box;
+  padding: 80px 6%;
+}
+
+
+.leftcontact {
+  width: 50%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+.leftcontact img {
+  width: 75%;
+  max-width: 500px;
+  height: auto;
+
+  object-fit: contain;
+
+  filter: drop-shadow(0 0 20px #eb8540);
+
+  transition: 0.5s ease;
+}
+
+.leftcontact img:hover {
+  transform: scale(1.05);
+
+  filter:
+    drop-shadow(0 0 15px #eb8540)
+    drop-shadow(0 0 35px #eb8540);
+}
+
+
+.rightcontact {
+  width: 50%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+
+.rightcontact h1 {
+  width: 70%;
+
+  margin-bottom: 30px;
+
+  font-size: 42px;
+  font-weight: 700;
+
+  text-align: left;
+
+  background: linear-gradient(
+    to right,
+    #eb8540,
+    #f3d6c5
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+
+.rightcontact form {
+  width: 70%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  background: rgba(55, 55, 55, 0.55);
+
+  border: 1px solid rgba(235, 133, 64, 0.25);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(235, 133, 64, 0.08);
+
+  backdrop-filter: blur(10px);
+
+  box-sizing: border-box;
+}
+
+
+.rightcontact input,
+.rightcontact textarea {
+
+  width: 100%;
+
+  padding: 15px 18px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #555;
+
+  border-radius: 10px;
+
+  background: #252525;
+
+  color: white;
+
+  font-size: 16px;
+
+  outline: none;
+
+  transition: all 0.3s ease;
+}
+
+
+.rightcontact input::placeholder,
+.rightcontact textarea::placeholder {
+  color: #aaa;
+}
+
+
+.rightcontact input:focus,
+.rightcontact textarea:focus {
+
+  border-color: #eb8540;
+
+  box-shadow:
+    0 0 8px rgba(235, 133, 64, 0.4),
+    0 0 20px rgba(235, 133, 64, 0.1);
+
+  background: #292929;
+}
+
+
+.rightcontact textarea {
+
+  min-height: 130px;
+
+  resize: vertical;
+}
+
+
+.rightcontact button {
+
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: linear-gradient(
+    90deg,
+    #eb8540,
+    #f2a875
+  );
+
+  color: #1e1e1e;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+
+.rightcontact button:hover {
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 5px 15px rgba(235, 133, 64, 0.4),
+    0 0 25px rgba(235, 133, 64, 0.25);
+
+  background: linear-gradient(
+    90deg,
+    #f2a875,
+    #eb8540
+  );
+}
+
+
+/* Button click */
+
+.rightcontact button:active {
+  transform: scale(0.97);
+}
+
+
+@media (max-width: 750px) {
+
+  #contact {
+
+    flex-direction: column;
+
+    padding: 80px 20px;
+
+  }
+
+
+  /* IMAGE */
+
+  .leftcontact {
+
+    width: 100%;
+
+    min-height: auto;
+
+    padding: 30px 0;
+  }
+
+
+  .leftcontact img {
+
+    width: 70%;
+
+    max-width: 330px;
+  }
+
+
+  /* FORM AREA */
+
+  .rightcontact {
+
+    width: 100%;
+
+    min-height: auto;
+
+    padding: 30px 0;
+  }
+
+
+  .rightcontact h1 {
+
+    width: 100%;
+
+    font-size: 34px;
+
+    text-align: center;
+
+    margin-bottom: 25px;
+  }
+
+
+  .rightcontact form {
+
+    width: 100%;
+
+    max-width: 450px;
+
+    padding: 22px;
+
+  }
+
+
+  .rightcontact input,
+  .rightcontact textarea {
+
+    width: 100%;
+
+    font-size: 15px;
+
+  }
+
+}

@@ -1,0 +1,74 @@
+#home{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.lefthome{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 20px;
+
+}
+.righthome{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.righthome img{
+  width: 60%;
+  filter: drop-shadow(2px 2px 20px #eb8540);
+}
+.homedetails{
+  font-size: 2rem;
+}
+.line1{
+  font-size: 0.8rem;
+}
+.line2{
+  font-size: 3rem;
+  background: linear-gradient(to right, #f68d48, #eaeff4);
+  font-weight: 600; 
+  background-clip: text;
+  color: transparent;
+}
+.line3{
+  font-size: 1.5rem;
+} 
+.homedetails button{
+  margin-top: 30px;
+  padding: 10px 30px;
+  font-size: 20px;
+  background-color: #f68d48;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.homedetails button:hover{
+  background-color: #eaeff4;
+  color: #f68d48;
+  transition: all 0.3s ease-in-out;
+}
+@media(max-width: 768px){
+  #home{
+    flex-direction: column-reverse;
+  }
+  .lefthome{
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+  }
+  .righthome{
+    width: 100%;
+    height: 50vh;
+    align-items: end ;
+  }
+}
